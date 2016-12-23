@@ -22,24 +22,41 @@ $navbar-default-bg: #252529;
   text-align: center;
 }
 
-.jumbotron{
+.jumbotron {
   height: 550px;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: -1px;
   font-weight: bold;
 }
 
-.btn-xlarge{
+.btn-xlarge {
   font-size: 1.7em;
 }
 
 .btn-xlarge:hover {
   font-size: 1.7em;
 }
+a.btn:visited { 
+  color: #333; 
+}
+
+a.btn-danger:visited { 
+  color: #fff; 
+}
+
+a.btn-primary:visited { 
+  color: #fff; 
+}
+
+a.btn-success:visited { 
+  color: #fff; 
+}
+
+
 
 footer {
   margin-top: 45px;
@@ -47,19 +64,20 @@ footer {
   border-top: 1px solid #eaeaea;
   color: #777;
 }
-footer a:hover{
+
+footer a:hover {
   color: #222;
 }
 
-footer small{
+footer small {
   float: left;
 }
 
-footer ul{
+footer ul {
   float: right;
   list-style: none;
 }
-footer ul li{
+footer ul li {
   float: left;
   margin-left:15px;
 }
@@ -68,22 +86,28 @@ footer ul li{
   text-align:center;
 }
 
-.article-title{
+.article-title {
   font-weight:bold;
   font-size:1.5em;
+  padding-bottom: 15px;
 }
 
-.article-body{
+.article-body {
   border-top: 1px solid #eaeaea;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.article-actions{
+.article-meta-details {
   border-top: 1px solid #eaeaea;
-  padding-top: 5px; 
+  margin-top: 15px;
 }
 
-.description{
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px; 
+}
+
+.description {
   margin-top: 0;
 }
