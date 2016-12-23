@@ -50,6 +50,8 @@ group :development, :test do
   # Use debugger
   # gem 'debugger', group: [:development, :test]
   
+  gem 'byebug'
+  
 end
 
 group :production do
