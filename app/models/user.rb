@@ -11,5 +11,7 @@ class User < ActiveRecord::Base
             uniqueness:{ case_sensitive: false},
             length:{minimum: 3, maximum: 25},
             format:{ with: VALID_EMAIL_REGEX}
+  validates :password_digest,
+            presence: true
           
 end
