@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-  has_many :articles
+  has_many :articles, dependent: :destroy
+  
   before_save {self.email = email.downcase}
   validates :name, 
             presence: true, 
@@ -13,5 +14,7 @@ class User < ActiveRecord::Base
             format:{ with: VALID_EMAIL_REGEX}
   validates :password_digest,
             presence: true
-          
+  
+
+  has_secure_password
 end
